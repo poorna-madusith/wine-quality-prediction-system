@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Prediction</title>
+    <style>
+        body {
+            background-color: #d4a3ae;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input[type="text"] {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #6a1b9a;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4a0072;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wine Quality Prediction System</h1>
+
+    <form method="POST" action="/predict">
+        <b>
+            Fixed Acidity: <input type="text" name="a" placeholder="enter 1"><br>
+            Volatile Acidity: <input type="text" name="b" placeholder="enter 2"><br>
+            Citric Acid: <input type="text" name="c" placeholder="enter 3"><br>
+            Residual Sugar: <input type="text" name="d" placeholder="enter 4"><br>
+            Chlorides: <input type="text" name="e" placeholder="enter 5"><br>
+            Free Sulfur Dioxide: <input type="text" name="f" placeholder="enter 6"><br>
+            Total Sulfur Dioxide: <input type="text" name="g" placeholder="enter 7"><br>
+            Density: <input type="text" name="h" placeholder="enter 8"><br>
+            pH: <input type="text" name="i" placeholder="enter 9"><br>
+            Sulphates: <input type="text" name="j" placeholder="enter 10"><br>
+            Alcohol: <input type="text" name="k" placeholder="enter 11"><br>
+        </b>
+        <input type="submit" value="Predict!">
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+
+</body>
+</html>
