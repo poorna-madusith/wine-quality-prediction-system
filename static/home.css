@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    background-color: #d4a3ae;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('javier-balseiro-jDU4yYk5Kgs-unsplash.jpg'); /* Replace with your image path */
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity and color */
+    z-index: -1; /* Keeps the overlay behind the content */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 600px; /* Adjust as needed */
+}
+input[type="text"] {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6a1b9a;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #4a0072;
+}
+h1 {
+    font-family: "Kaushan Script", cursive;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 80px;
+    color: aliceblue;
+}
+b {
+    color: white;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px;
+    margin-left: 37%;
+    margin-top: 1px;
+    max-width: 600px; /* Adjust as needed */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 50px;
+}
+#message{
+    color: aliceblue;
+}
+/* General button styling */
+.button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 11px 30px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block display */
+    font-size: 13px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Specific button style for the Reset button */
+.reset-button {
+    background-color: #f44336; /* Red background */
+}
+
+.reset-button:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+
+
